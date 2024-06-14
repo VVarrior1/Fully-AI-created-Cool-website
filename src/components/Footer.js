@@ -1,0 +1,12 @@
+// src/components/Footer.js
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-800 text-white p-4">
+      <p className="text-center">&copy; 2023 Your Name</p>
+    </footer>
+  );
+};
+
+export default Footer;
