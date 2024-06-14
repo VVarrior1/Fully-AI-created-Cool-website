@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import Shapes from "./components/Shapes";
 import TodoList from "./components/TodoList";
+import TodoBig from "./components/TodoBig";
 
 function App() {
   return (
@@ -23,8 +24,7 @@ function App() {
         <Route path="/experience" exact element={<Experience />} />
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/shapes" exact element={<Shapes />} />
-        <Route path="/todolist" exact element={<TodoList />} />
-
+        <Route path="/todolist" exact element={<TodoBig />} />
       </Routes>
       <Footer />
     </div>
