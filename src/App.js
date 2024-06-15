@@ -1,7 +1,6 @@
 // src/App.js
 import React from "react";
 import Hero from "./components/Hero";
-import SierpinskiTriangle from "./components/SierpinskiTriangle";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
@@ -10,7 +9,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import Shapes from "./components/Shapes";
-import TodoList from "./components/TodoList";
 import TodoBig from "./components/TodoBig";
 
 function App() {

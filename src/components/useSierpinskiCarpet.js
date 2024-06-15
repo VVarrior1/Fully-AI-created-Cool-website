@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
 const useSierpinskiCarpet = (canvasRef, level, colors) => {
   useEffect(() => {

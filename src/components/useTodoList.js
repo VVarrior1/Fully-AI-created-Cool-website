@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const useTodoList = () => {
-  const [tasks, setTasks] = useState([
-    { id: "1", content: "Task 1", completed: false },
-    { id: "2", content: "Task 2", completed: false },
-    { id: "3", content: "Task 3", completed: false },
-  ]);
+  const [tasks, setTasks] = useState(() => {
+    const storedTasks = localStorage.getItem("tasks");
+    return storedTasks ? JSON.parse(storedTasks) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const addTask = (task) => {
     setTasks([...tasks, task]);
@@ -23,7 +26,7 @@ const useTodoList = () => {
     );
   };
 
-  return { tasks, setTasks, addTask, deleteTask, toggleCompletion };
+  return { tasks, addTask, deleteTask, toggleCompletion };
 };
 
 export default useTodoList;

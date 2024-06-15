@@ -5,7 +5,6 @@ const PomodoroTimer = () => {
   const {
     workTime,
     breakTime,
-    timerRunning,
     onBreak,
     startTimer,
     stopTimer,
@@ -13,9 +12,9 @@ const PomodoroTimer = () => {
   } = usePomodoroTimer();
 
   return (
-    <div className="flex justify-between mb-4 bg-gray-600 p-4 rounded-lg text-white mx-auto">
+    <div className="flex justify-between bg-gray-600 p-4 rounded-lg text-white mx-auto">
       <h2 className="text-2xl font-bold">
-        {onBreak ? "Break Time" : "Work Time"}
+        {onBreak ? "🎮Break Time" : "🍅Work Time"}
       </h2>
       <p className="text-lg">
         {onBreak

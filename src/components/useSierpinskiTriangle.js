@@ -1,5 +1,5 @@
 // useSierpinskiTriangle.js
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 const useSierpinskiTriangle = (canvasRef, level, colors, middleColor) => {
   useEffect(() => {
